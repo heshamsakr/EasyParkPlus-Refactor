@@ -65,3 +65,61 @@ To run the initial prototype and work on the refactored code:
       * Justification for code fixes and chosen design patterns.
       * **DDD Modeling:** Bounded context diagram and basic domain models.
       * **Microservices Architecture:** Diagram including services, APIs/endpoints, and per-service DBs.
+   
+## 📂 Project Directory Structure
+
+```
+EasyParkPlus-Refactor-ScaleUp/
+├── 01_Baseline_Code/
+[cite_start]│   └── (Original parking lot prototype files go here) [cite: 14]
+├── 02_Refactored_App/
+│   ├── parking_manager/
+│   │   ├── __init__.py
+[cite_start]│   │   └── (Refactored core application modules) [cite: 20]
+│   ├── utils/
+│   │   └── (Utility classes/functions)
+│   └── main.py              # Entry point for the refactored application
+├── 03_Documentation/
+│   ├── UML_Diagrams/
+│   │   ├── 01_Initial_Design/
+│   │   │   ├── initial_structural.png
+│   │   │   └── initial_behavioral.png
+│   │   └── 02_Redesign/
+│   │   │   ├── redesign_structural.png
+│   │   │   └── redesign_behavioral.png
+│   ├── Architecture_Design/
+│   │   ├── bounded_context_diagram.png
+[cite_start]│   │   ├── microservices_architecture_diagram.png [cite: 34]
+[cite_start]│   │   └── domain_models.md / .png (Basic domain models) [cite: 34]
+[cite_start]│   └── Written_Report.docx / .pdf / .md # Contains justification, DDD, and microservices proposal [cite: 21, 24]
+├── 04_Evidence/
+[cite_start]│   ├── screenshots/              # Screenshots of the refactored application running [cite: 34]
+[cite_start]│   └── video/                    # Brief video (optional) [cite: 34]
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+-----
+
+## Rationale for Key Directories
+
+### `01_Baseline_Code/`
+
+  * [cite\_start]**Purpose:** To preserve the original preliminary prototype code base [cite: 1] [cite\_start]exactly as it was downloaded[cite: 15]. This is important for reference and comparison.
+
+### `02_Refactored_App/`
+
+  * [cite\_start]**Purpose:** This is where you will place your updated source code[cite: 34].
+  * **Structure:** Using a sub-directory like `parking_manager/` keeps the core application clean and separate from configuration files or utility scripts, following good Python project practices. [cite\_start]This is the code that implements your chosen design patterns and anti-pattern removals[cite: 19].
+
+### `03_Documentation/`
+
+  * [cite\_start]**Purpose:** To store all required written and diagrammatic artifacts[cite: 34]. [cite\_start]Separating diagrams by **Initial Design** and **Redesign** clearly organizes the required four UML diagrams[cite: 33].
+  * [cite\_start]**`Architecture_Design/`:** Dedicated space for the deliverables related to Domain-Driven Design and the Microservices proposal (bounded contexts, domain models, and the architecture diagram)[cite: 34].
+
+### `04_Evidence/`
+
+  * [cite\_start]**Purpose:** A specific place for the required screenshots or video showing the application running[cite: 34].
+
+[cite\_start]This structure ensures that the historical code, the working refactored code, and all submission documentation are clearly separated, making it easy to manage and compile the final `.zip` submission[cite: 34].
