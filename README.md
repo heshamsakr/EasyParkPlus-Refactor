@@ -1,7 +1,5 @@
 # `EasyParkPlus-Refactor`
 
-**Tags:** #SoftwareDesign #DomainDrivenDesign #Microservices #Python #UML #DesignPatterns #EVCharging #ParkingManagement #Refactoring #Architecture
-
 ## 🅿️ Project Overview
 
 This repository showcases a comprehensive **Software Design & Architecture (SDA) Project** for **EasyParkPlus**, transforming a basic parking lot prototype into a scalable, enterprise-grade system. By applying advanced software engineering principles, we demonstrate how to evolve legacy code into a robust, maintainable architecture that supports multi-facility operations and innovative EV charging features.
