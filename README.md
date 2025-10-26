@@ -1,6 +1,6 @@
-# `EasyParkPlus-Refactor`
+# EasyParkPlus-Refactor
 
-## 🅿️ Project Overview
+## Project Overview
 
 This repository showcases a comprehensive **Software Design & Architecture (SDA) Project** for **EasyParkPlus**, transforming a basic parking lot prototype into a scalable, enterprise-grade system. By applying advanced software engineering principles, we demonstrate how to evolve legacy code into a robust, maintainable architecture that supports multi-facility operations and innovative EV charging features.
 
@@ -14,53 +14,53 @@ This project exemplifies best practices in software evolution, from anti-pattern
 
 -----
 
-## 📊 Current Status
+## Current Status
 
-**Project Completion**: ✅ 12/12 Rubric Requirements Complete (100%)  
-**Last Updated**: October 26, 2025  
-**Status**: ✅ READY FOR FINAL SUBMISSION
+Project Completion: 12/12 Rubric Requirements Complete (100%)
+Last Updated: October 26, 2025
+Status: READY FOR FINAL SUBMISSION
 
-### ✅ All Rubric Requirements Met
+All Rubric Requirements Met
 
-#### Refactoring & Design Patterns
-- **✅ Requirement 1-2**: Design patterns properly implemented and documented
+Refactoring & Design Patterns
+- Requirement 1-2: Design patterns properly implemented and documented
   - Factory Pattern in Vehicle.py for object creation
   - Observer Pattern in ParkingLot.py for state change notifications
   - Written assessment in REFACTORING_ASSESSMENT.md with detailed justification
 
-#### Code Quality & Anti-Patterns
-- **✅ Requirement 5-6**: Bad coding practices identified and fixed
+Code Quality & Anti-Patterns
+- Requirement 5-6: Bad coding practices identified and fixed
   - 7 major anti-patterns identified (global variables, magic numbers, poor naming, improper inheritance, lack of abstraction, no validation, dead code)
   - All improvements made with proper encapsulation and SOLID principles applied
 
-#### UML Documentation
-- **✅ Requirement 3-4**: Original and Redesigned UML Diagrams
+UML Documentation
+- Requirement 3-4: Original and Redesigned UML Diagrams
   - 2 structural + 2 behavioral diagrams for original design (8 additional detail diagrams)
   - 2 structural + 2 behavioral diagrams for refactored design with Factory + Observer patterns
   - All diagrams in 03_Documentation/02_UML_Diagrams/
 
-#### Domain-Driven Design
-- **✅ Requirement 7-9**: Complete DDD implementation
+Domain-Driven Design
+- Requirement 7-9: Complete DDD implementation
   - Bounded Context Diagram: 8 distinct contexts mapped to business domains
   - Domain Models: 12 aggregates with 40+ domain events, value objects, and repositories
   - Ubiquitous Language: Comprehensive business terminology across all contexts
   - Microservices Architecture: Detailed service design with AWS infrastructure, Kafka/MSK communication, and OCPP 2.0.1 EV charging integration
 
-#### Submission Requirements
-- **✅ Requirement 10-12**: Code, evidence, and proper format
+Submission Requirements
+- Requirement 10-12: Code, evidence, and proper format
   - Updated source code in 02_Refactored_App/ (926 lines, professionally structured)
   - Application screenshots in 04_Evidence/Screenshots.docx (13.7 MB)
   - Comprehensive final report in 05_Final_Report/ (PDF + DOCX, 2.2 MB)
 
-**All deliverables are complete, verified, and exceed rubric expectations as of October 26, 2025**.
+All deliverables are complete, verified, and exceed rubric expectations as of October 26, 2025.
 
 -----
 
-## 📋 Detailed Rubric Requirements Fulfillment
+## Detailed Rubric Requirements Fulfillment
 
 This section provides detailed mapping of our implementation to the official project rubric requirements:
 
-### **Rubric Requirement 1-2: Design Pattern Implementation & Documentation** ✅
+### Rubric Requirement 1-2: Design Pattern Implementation & Documentation
 
 **Requirement**: "Design and code improvements appropriately use two relevant design patterns" + "Written report is detailed and documents changes made"
 
@@ -84,7 +84,7 @@ This section provides detailed mapping of our implementation to the official pro
 
 ---
 
-### **Rubric Requirement 3-4: UML Diagrams (Original & Redesigned)** ✅
+### Rubric Requirement 3-4: UML Diagrams (Original & Redesigned)
 
 **Original Design Documentation**:
 - **Location**: `03_Documentation/02_UML_Diagrams/Initial_Design/`
@@ -101,7 +101,7 @@ This section provides detailed mapping of our implementation to the official pro
 
 ---
 
-### **Rubric Requirement 5-6: Anti-Pattern Identification & Fixes** ✅
+### Rubric Requirement 5-6: Anti-Pattern Identification & Fixes
 
 **Anti-Patterns Identified** (7 major issues documented in `REFACTORING_ASSESSMENT.md`):
 
@@ -119,7 +119,7 @@ This section provides detailed mapping of our implementation to the official pro
 
 ---
 
-### **Rubric Requirement 7: Bounded Context Diagram** ✅
+### Rubric Requirement 7: Bounded Context Diagram
 
 **Delivered**: `03_Documentation/03_Architecture_Design/bounded_context_diagram.md` + PNG visualization
 
@@ -139,7 +139,7 @@ This section provides detailed mapping of our implementation to the official pro
 
 ---
 
-### **Rubric Requirement 8: Domain Models (DDD)** ✅
+### Rubric Requirement 8: Domain Models (DDD)
 
 **Delivered**: `03_Documentation/03_Architecture_Design/domain_models.md` (38 KB comprehensive documentation)
 
@@ -169,7 +169,7 @@ This section provides detailed mapping of our implementation to the official pro
 
 ---
 
-### **Rubric Requirement 9: Microservices Architecture** ✅
+### Rubric Requirement 9: Microservices Architecture
 
 **Delivered**: Complete microservices architecture design with multiple artifacts
 
@@ -192,7 +192,7 @@ This section provides detailed mapping of our implementation to the official pro
 
 ---
 
-### **Rubric Requirement 10: Updated Source Code** ✅
+### Rubric Requirement 10: Updated Source Code
 
 **Delivered**: `02_Refactored_App/` (926 lines of production-quality Python)
 
@@ -211,7 +211,7 @@ This section provides detailed mapping of our implementation to the official pro
 
 ---
 
-### **Rubric Requirement 11: Application Screenshots** ✅
+### Rubric Requirement 11: Application Screenshots
 
 **Delivered**: `04_Evidence/Screenshots.docx` (13.7 MB)
 
@@ -223,7 +223,7 @@ This section provides detailed mapping of our implementation to the official pro
 
 ---
 
-### **Rubric Requirement 12: Submission Format & Completeness** ✅
+### Rubric Requirement 12: Submission Format & Completeness
 
 **Delivery Format**: All artifacts organized in required structure
 
@@ -254,56 +254,66 @@ This section provides detailed mapping of our implementation to the official pro
 
 ---
 
-## Summary: All 12 Rubric Requirements Met ✅
+## Summary: All 12 Rubric Requirements Met
 
 The project successfully fulfills all rubric requirements with high-quality implementations that exceed expectations in multiple areas. The combination of practical design patterns, comprehensive DDD analysis, and enterprise-grade architecture design demonstrates mastery of software engineering principles.
 
 ---
 
-## 🔧 AI Tools Usage Disclosure
+## AI Tools Usage Disclosure
 
 In accordance with Quantic School's academic integrity policy, we disclose the following AI tool usage in this project:
 
 ### Overview of AI Tools Employed
 
-The EasyParkPlus-Refactor project leveraged AI tools as enhancement and organizational assistants during the development and documentation phases. These tools were used to support team collaboration, organize complex documentation, and clarify business requirements—not to replace original engineering analysis and decision-making.
+The EasyParkPlus-Refactor project leveraged AI tools as enhancement assistants during the development and documentation phases. These tools were used to support team collaboration, synthesize complex information, and clarify business requirements—not to replace original engineering analysis and decision-making.
 
 ### Tools Used
-- **ChatGPT (OpenAI)**: Used to simulate conversations with "Michael, Technical Manager" (as specified in project requirements) to gather business requirements and clarify technical details during the Domain-Driven Design discovery phase
-- **OpenCode Terminal (opencode.ai)**: Used as a development assistant to organize project structure, format documentation, and ensure consistency across bounded contexts and domain models
+
+| AI Tool | Function | Project Phase |
+|---------|----------|----------------|
+| Claude (Model: Sonnet 4.5) | Generating code | Structural & behavioral diagrams and refactoring code |
+| ChatGPT 4 | Technical Assistant/Consultant | DDD Modeling, Architecture Drafting, Q&A Refinement |
+| OpenCode Terminal (Models: Sonnet 4.5 and Haiku 4.5) | Development Assistant | Organize DDD documentation structure, format domain models and bounded contexts for consistency, and manage the synthesis of business requirements into coherent bounded contexts with aggregates and domain events |
 
 ### Scope of AI Tool Usage
 
+**Purpose and Rationale**:
+- Synthesizing Industry Standards: Quickly integrating complex, external requirements like the OCPP 2.0.1 protocol and smart grid features into the domain model definitions
+- Validating DDD Concepts: Ensuring the Ubiquitous Language and Aggregate boundaries were robust and aligned with 2025 DDD best practices
+- Refining Technical Q&A: Serving as an intermediary to process technical requirements into clear architectural constraints
+
 **Applied to**:
-- Requirement elicitation conversations (15 technical questions + 10 architecture questions)
-- Documentation organization and formatting across DDD artifacts
-- Code refactoring assistance and pattern implementation guidance
-- README and documentation structure planning
+- Synthesizing 25 business requirement clarifications into domain model definitions
+- Refining Domain-Driven Design concepts and Ubiquitous Language
+- Drafting microservices API specifications and responsibilities
+- Organizing and formatting DDD documentation across multiple files
+- Code refactoring proposals using Factory and Observer patterns
 
 **NOT Applied to** (All Original Work):
 - Strategic decisions on bounded context boundaries
-- Identification of aggregates and their relationships
-- Business rules and domain event specifications
+- Identification of 12 aggregates and their relationships
+- Definition of 40+ domain events and business rules
 - Integration patterns between bounded contexts
 - MVP phasing strategy and roadmap
 - Design pattern selection and implementation decisions
 - Anti-pattern identification and severity assessment
 - UML diagram design and architectural decisions
-- Microservices architecture design
+- Final microservices architecture design
 
 ### Quality Assurance
 
-All AI-generated content, suggestions, and organizational aids have been:
-1. **Reviewed and validated** against project requirements and specifications
-2. **Adapted and modified** to fit the specific context of EasyParkPlus
-3. **Integrated** with team's original analysis and engineering decisions
-4. **Verified** for accuracy and appropriateness for academic submission
+All AI-generated content has been:
+1. Reviewed and validated by team members against project requirements
+2. Adapted and modified to fit the specific context of EasyParkPlus
+3. Integrated with team's original analysis and engineering decisions
+4. Verified for accuracy and appropriateness for academic submission
 
-The team takes full responsibility for all deliverables and the accuracy of all technical content. AI tools enhanced productivity and organization but did not replace rigorous software engineering analysis and design thinking. For comprehensive AI usage disclosure, refer to `05_Final_Report/Hesham_Mihai_HaVu_Software Design_EasyParkPlus_Report_V1.0.pdf`.
+The team takes full responsibility for all deliverables and the accuracy of all technical content. AI tools enhanced productivity but did not replace rigorous software engineering analysis and design thinking. For comprehensive AI usage disclosure, refer to `05_Final_Report/Hesham_Mihai_HaVu_Software Design_EasyParkPlus_Report_V1.0.pdf`.
 
 -----
 
-## 🎯 Project Goals
+## Project Goals
 
 The successful completion of this project will enable the team to:
 
@@ -315,7 +325,7 @@ The successful completion of this project will enable the team to:
 
 -----
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -337,7 +347,7 @@ To run the application and work on the codebase, **Python 3 (latest version)** i
 
 -----
 
-## 👥 Team
+## Team
 
 | Name | Primary Role | Initial Task Focus |
 | :--- | :--- | :--- |
@@ -347,7 +357,7 @@ To run the application and work on the codebase, **Python 3 (latest version)** i
 
 -----
 
-## 📂 Project Structure
+## Project Structure
 
 The repository is structured to separate the original code, the refactored solution, and all required documentation artifacts.
 
@@ -355,18 +365,18 @@ The repository is structured to separate the original code, the refactored solut
 EasyParkPlus-Refactor/
 ├── 01_Baseline_Code/                          # Original parking lot prototype
 │   ├── Aessesment/
-│   │   └── REFACTORING_ASSESSMENT.md          # ✅ Anti-pattern analysis + design patterns
+│   │   └── REFACTORING_ASSESSMENT.md          # Anti-pattern analysis + design patterns
 │   ├── ElectricVehicle.py
 │   ├── ParkingManager.py
 │   └── Vehicle.py
 │
-├── 02_Refactored_App/                         # ✅ Refactored with Factory + Observer patterns
+├── 02_Refactored_App/                         # Refactored with Factory + Observer patterns
 │   ├── parking_manager/
 │   │   ├── __init__.py
-│   │   ├── ParkingLot.py                      # ✅ Observer pattern implementation
-│   │   ├── ParkingManager.py                  # ✅ Refactored manager
-│   │   └── Vehicle.py                         # ✅ Factory pattern implementation
-│   └── main.py                                # ✅ Application entry point
+│   │   ├── ParkingLot.py                      # Observer pattern implementation
+│   │   ├── ParkingManager.py                  # Refactored manager
+│   │   └── Vehicle.py                         # Factory pattern implementation
+│   └── main.py                                # Application entry point
 │
 ├── 03_Documentation/
 │   ├── 01_Requirements_and_Scope/
@@ -375,12 +385,12 @@ EasyParkPlus-Refactor/
 │   │   └── Software_Design_and_Architecture_Project.pdf
 │   │
 │   ├── 02_UML_Diagrams/
-│   │   ├── Initial_Design/                    # ✅ Original design diagrams (8 total)
+│   │   ├── Initial_Design/                    # Original design diagrams (8 total)
 │   │   │   ├── Initial_Behavioral UML Diagram.png
 │   │   │   ├── Initial_Behavioral UML Diagram_1-7.png
 │   │   │   └── Initial_Structural UML Diagram.png
 │   │   │
-│   │   ├── Redesign/                          # ✅ Refactored design diagrams (8 total)
+│   │   ├── Redesign/                          # Refactored design diagrams (8 total)
 │   │   │   ├── Redesigned_Behavioral UML Diagram.png
 │   │   │   ├── Redesigned_Behavioral UML Diagram_1-7.png
 │   │   │   └── Redesigned_Structural UML Diagram.png
@@ -389,20 +399,21 @@ EasyParkPlus-Refactor/
 │   │       ├── bounded-context.png
 │   │       └── microservices.png
 │   │
-│   └── 03_Architecture_Design/                # ✅ DDD & Architecture Documentation
-│       ├── MICHAEL_QA_SESSIONS.md             # ✅ 25 technical business clarifications
-│       ├── bounded_context_diagram.md         # ✅ 8 bounded contexts with relationships
-│       ├── bounded_contexts_analysis.md       # ✅ Context dependency analysis
-│       ├── bounded_context.png                # ✅ Visual representation
-│       ├── domain_models.md                   # ✅ 12 aggregates, 40+ domain events
-│       ├── microservice.mmd                   # ✅ Mermaid flowchart diagram
-│       ├── microservices.jpg                  # ✅ High-resolution architecture diagram
-│       ├── microservices_architecture.md      # ✅ Detailed service descriptions
-│       ├── questions_for_technical_manager.md # ✅ Requirements gathering template
-│       └── ubiquitous_language.md             # ✅ Business terminology glossary
+│   └── 03_Architecture_Design/                # DDD & Architecture Documentation
+│       ├── MICHAEL_QA_SESSIONS.md             # 25 technical business clarifications
+│       ├── bounded_context_diagram.md         # 8 bounded contexts with relationships
+│       ├── bounded_contexts_analysis.md       # Context dependency analysis
+│       ├── bounded_context.png                # Visual representation
+│       ├── domain_models.md                   # 12 aggregates, 40+ domain events
+│       ├── microservice.mmd                   # Mermaid flowchart diagram
+│       ├── microservices.jpg                  # High-resolution architecture diagram
+│       ├── microservices_architecture.md      # Detailed service descriptions
+│       ├── questions_for_technical_manager.md # Requirements gathering template
+│       └── ubiquitous_language.md             # Business terminology glossary
 │
 ├── 04_Evidence/
-│   └── Screenshots.docx                       # ✅ Application screenshots (13.7 MB)
+│   ├── Screenshots.docx                       # Application screenshots (13.7 MB)
+│   └── Screenshots.pdf                        # Application screenshots (PDF format)
 │
 ├── 05_Final_Report/
 │   ├── Hesham_Mihai_HaVu_Software Design_EasyParkPlus_Report_V1.0.docx
@@ -410,16 +421,16 @@ EasyParkPlus-Refactor/
 │
 ├── .gitignore
 ├── opencode.json
-├── README.md                                   # ✅ This comprehensive project documentation
-└── REFACTORING_ASSESSMENT.md                  # ✅ Anti-pattern analysis + patterns (in root for easy access)
+├── README.md                                   # Comprehensive project documentation
+└── REFACTORING_ASSESSMENT.md                  # Anti-pattern analysis + patterns (in root for easy access)
 ```
 
 ### Directory Descriptions
 
 | Directory | Contents | Status |
 |-----------|----------|--------|
-| **01_Baseline_Code** | Original prototype code and anti-pattern assessment | ✅ Complete |
-| **02_Refactored_App** | Refactored code with Factory + Observer patterns | ✅ Complete |
-| **03_Documentation** | All DDD, UML, and architecture documentation | ✅ Complete |
-| **04_Evidence** | Screenshots demonstrating application functionality | ✅ Complete |
-| **05_Final_Report** | Comprehensive final project report (PDF + DOCX) | ✅ Complete |
+| 01_Baseline_Code | Original prototype code and anti-pattern assessment | Complete |
+| 02_Refactored_App | Refactored code with Factory + Observer patterns | Complete |
+| 03_Documentation | All DDD, UML, and architecture documentation | Complete |
+| 04_Evidence | Screenshots demonstrating application functionality | Complete |
+| 05_Final_Report | Comprehensive final project report (PDF + DOCX) | Complete |
