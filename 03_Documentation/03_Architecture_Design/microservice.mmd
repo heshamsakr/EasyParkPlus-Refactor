@@ -1,0 +1,90 @@
+flowchart LR
+    subgraph ClientApplications
+        A[Mobile App] -- HTTPS --> G
+        B[Web Portal] -- HTTPS --> G
+        C[IoT Devices] -- HTTPS/MQTT --> G
+    end
+
+    subgraph AWSCentralServices
+        G[AWS API Gateway]
+        K((Amazon MSK Event Bus))
+        R((AWS ElastiCache Redis))
+        M[AWS CloudWatch/S3]
+    end
+
+    subgraph ECSMicroservices
+        direction LR
+        subgraph CoreParking
+            P1[BC1: Parking Space Mgmt]
+            P2[BC2: Vehicle Entry/Exit]
+            P3[BC3: Reservation Mgmt]
+            P4[BC4: EV Charging Station]
+        end
+        
+        subgraph Supporting
+            S1[BC6: User & Access Mgmt]
+            S2[BC5: Billing & Pricing]
+            S3[BC8: Analytics & Reporting]
+        end
+    end
+    
+    subgraph External
+        E1[Stripe Payment Gateway]
+        E2[OCPP 2.0.1 Charging Hardware]
+    end
+    
+    subgraph DataLayer
+        D[(RDS PostgreSQL <br>w/ Separate Schemas)]
+    end
+
+    %% Client Communication via API Gateway
+    G -->|JWT Auth/Routing| S1
+    G -->|Synchronous REST| P1
+    G -->|Synchronous REST| P2
+    G -->|Synchronous REST| P3
+    G -->|Synchronous REST| P4
+    G -->|Synchronous REST| S2
+    G -->|Synchronous REST| S3
+
+    %% Auth and Cache
+    S1 -->|Validate/Issue JWT| R
+    P1 -->|Cache Availability| R
+    P4 -- Cache Status --> R
+    
+    %% Service-to-DB Communication
+    P1 --> D
+    P2 --> D
+    P3 --> D
+    P4 --> D
+    S1 --> D
+    S2 --> D
+    S3 --> D
+    
+    %% Asynchronous (Kafka) Communication
+    P2 -- VehicleCheckedIn --> K
+    P4 -- ChargingCompleted --> K
+    S2 -- PaymentProcessed --> K
+    
+    K -->|Triggers Billing| S2;
+
+    K -->|Updates Metrics \(ACL\)| S3;
+
+    K -->|Updates Space Status| P1;
+
+    K -->|Updates Subscriptions| S1;
+    
+    %% External Integrations
+    S2 -- Conformist (HTTPS) --> E1
+    P4 -- Conformist (WebSocket) --> E2
+    
+    %% Monitoring
+    P1 -- Logs/Metrics --> M
+    G -- Logs/Metrics --> M
+    D -- Backups --> M
+
+    %% Phase 2 Context
+    subgraph Phase2
+        F1[BC7: Facility Operations <br>(Phase 2)]
+    end
+    F1 -.-> D
+    F1 -.-> K
