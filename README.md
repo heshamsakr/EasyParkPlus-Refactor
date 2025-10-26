@@ -270,7 +270,7 @@ The EasyParkPlus-Refactor project leveraged AI tools as enhancement assistants d
 | AI Tool | Function | Project Phase |
 |---------|----------|----------------|
 | Claude (Model: Sonnet 4.5) | Code Generation | Structural & behavioral diagrams and refactoring code |
-| ChatGPT 4 | Technical Manager Consultant | Simulating Michael (Technical Manager) conversations to gather domain requirements, clarify technical details, and validate DDD concepts for bounded contexts and domain models (25 business requirement clarifications) |
+| ChatGPT 4 | Technical Manager Consultant | Simulating Michael (Technical Manager) conversations to gather domain requirements, clarify technical details, and validate DDD concepts for bounded contexts and domain models (25 business requirement clarifications) - [View conversation](https://chatgpt.com/share/68fa4b3c-c230-8006-acbe-396a4c3a3bcb) |
 | OpenCode Terminal (Models: Sonnet 4.5 and Haiku 4.5) | Development Assistant | Organize DDD documentation structure, format domain models and bounded contexts for consistency, and manage the synthesis of business requirements into coherent bounded contexts with aggregates and domain events |
 
 ### Scope of AI Tool Usage
