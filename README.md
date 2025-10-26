@@ -264,31 +264,42 @@ The project successfully fulfills all rubric requirements with high-quality impl
 
 In accordance with Quantic School's academic integrity policy, we disclose the following AI tool usage in this project:
 
-### Mihai Chindriș (DDD Lead)
-**Tools used**:
-- **ChatGPT (OpenAI)**: Used to simulate conversations with "Michael, Technical Manager" (as specified in project requirements) to gather business requirements and clarify technical details for the Domain-Driven Design phase
-- **OpenCode Terminal (opencode.ai)**: Used as a development assistant to organize DDD documentation, structure bounded contexts, and format domain models based on the gathered requirements
+### Overview of AI Tools Employed
 
-**Scope**:
-- ChatGPT was used to ask 15 technical and business questions (Round 1) and draft 10 architecture questions (Round 2) to understand system requirements
-- OpenCode was used to structure the DDD analysis, organize documentation files, and ensure consistency across bounded contexts and domain models
-- **All domain modeling decisions, bounded context identification, and architectural analysis represent original thought** based on project context and Michael's answers
-- AI tools served as **enhancement tools for organization and formatting**, not as replacement for original analysis
+The EasyParkPlus-Refactor project leveraged AI tools as enhancement and organizational assistants during the development and documentation phases. These tools were used to support team collaboration, organize complex documentation, and clarify business requirements—not to replace original engineering analysis and decision-making.
 
-**What was NOT AI-generated**:
+### Tools Used
+- **ChatGPT (OpenAI)**: Used to simulate conversations with "Michael, Technical Manager" (as specified in project requirements) to gather business requirements and clarify technical details during the Domain-Driven Design discovery phase
+- **OpenCode Terminal (opencode.ai)**: Used as a development assistant to organize project structure, format documentation, and ensure consistency across bounded contexts and domain models
+
+### Scope of AI Tool Usage
+
+**Applied to**:
+- Requirement elicitation conversations (15 technical questions + 10 architecture questions)
+- Documentation organization and formatting across DDD artifacts
+- Code refactoring assistance and pattern implementation guidance
+- README and documentation structure planning
+
+**NOT Applied to** (All Original Work):
 - Strategic decisions on bounded context boundaries
 - Identification of aggregates and their relationships
-- Business rules and domain events
-- Integration patterns between contexts
-- MVP phasing strategy
+- Business rules and domain event specifications
+- Integration patterns between bounded contexts
+- MVP phasing strategy and roadmap
+- Design pattern selection and implementation decisions
+- Anti-pattern identification and severity assessment
+- UML diagram design and architectural decisions
+- Microservices architecture design
 
-### Ha Vu (Code Implementation Lead)
-**Tools used**: [To be documented by Ha Vu]
+### Quality Assurance
 
-### Hesham Sakr (Architectural Lead)
-**Tools used**: [To be documented by Hesham]
+All AI-generated content, suggestions, and organizational aids have been:
+1. **Reviewed and validated** against project requirements and specifications
+2. **Adapted and modified** to fit the specific context of EasyParkPlus
+3. **Integrated** with team's original analysis and engineering decisions
+4. **Verified** for accuracy and appropriateness for academic submission
 
-**Note**: All AI-generated content has been reviewed, validated, and adapted to fit the specific requirements of the EasyParkPlus system. The team takes full responsibility for the accuracy and appropriateness of all submissions.
+The team takes full responsibility for all deliverables and the accuracy of all technical content. AI tools enhanced productivity and organization but did not replace rigorous software engineering analysis and design thinking. For comprehensive AI usage disclosure, refer to `05_Final_Report/Hesham_Mihai_HaVu_Software Design_EasyParkPlus_Report_V1.0.pdf`.
 
 -----
 
@@ -342,33 +353,73 @@ The repository is structured to separate the original code, the refactored solut
 
 ```
 EasyParkPlus-Refactor/
-├── 01_Baseline_Code/              # Original parking lot prototype
+├── 01_Baseline_Code/                          # Original parking lot prototype
+│   ├── Aessesment/
+│   │   └── REFACTORING_ASSESSMENT.md          # ✅ Anti-pattern analysis + design patterns
 │   ├── ElectricVehicle.py
 │   ├── ParkingManager.py
 │   └── Vehicle.py
-├── 02_Refactored_App/             # ✅ Refactored with Factory + Observer patterns
+│
+├── 02_Refactored_App/                         # ✅ Refactored with Factory + Observer patterns
 │   ├── parking_manager/
-│   │   ├── ParkingLot.py         # Observer pattern implementation
-│   │   ├── ParkingManager.py     # Refactored manager
-│   │   └── Vehicle.py            # Factory pattern implementation
-│   └── main.py
+│   │   ├── __init__.py
+│   │   ├── ParkingLot.py                      # ✅ Observer pattern implementation
+│   │   ├── ParkingManager.py                  # ✅ Refactored manager
+│   │   └── Vehicle.py                         # ✅ Factory pattern implementation
+│   └── main.py                                # ✅ Application entry point
+│
 ├── 03_Documentation/
 │   ├── 01_Requirements_and_Scope/
-│   │   ├── Software_Design_and_Architecture_Project.pdf
-│   │   └── EMBA_MBA_Group_Project_Agreement.pdf
+│   │   ├── EMBA_MBA_Group_Project_Agreement.pdf
+│   │   ├── Group Project Assignment Chart Template.xlsx
+│   │   └── Software_Design_and_Architecture_Project.pdf
+│   │
 │   ├── 02_UML_Diagrams/
-│   │   ├── Initial_Design/       # ⚠️ 2 PNG files (need verification)
-│   │   └── Redesign/             # 🚧 TODO: 2 UML diagrams needed
-│   └── 03_Architecture_Design/
-│       ├── bounded_context_diagram.md      # ✅ 8 bounded contexts
-│       ├── domain_models.md                # ✅ 12 aggregates with DDD
-│       ├── ubiquitous_language.md          # ✅ Business terminology
-│       ├── michael_answers_round1.md       # ✅ 15 Q&A with tech manager
-│       ├── bounded_contexts_analysis.md
-│       ├── questions_for_technical_manager.md
-│       └── microservices_architecture_diagram.md  # 🚧 TODO: Hesham
+│   │   ├── Initial_Design/                    # ✅ Original design diagrams (8 total)
+│   │   │   ├── Initial_Behavioral UML Diagram.png
+│   │   │   ├── Initial_Behavioral UML Diagram_1-7.png
+│   │   │   └── Initial_Structural UML Diagram.png
+│   │   │
+│   │   ├── Redesign/                          # ✅ Refactored design diagrams (8 total)
+│   │   │   ├── Redesigned_Behavioral UML Diagram.png
+│   │   │   ├── Redesigned_Behavioral UML Diagram_1-7.png
+│   │   │   └── Redesigned_Structural UML Diagram.png
+│   │   │
+│   │   └── Architecture_Diagrams/
+│   │       ├── bounded-context.png
+│   │       └── microservices.png
+│   │
+│   └── 03_Architecture_Design/                # ✅ DDD & Architecture Documentation
+│       ├── MICHAEL_QA_SESSIONS.md             # ✅ 25 technical business clarifications
+│       ├── bounded_context_diagram.md         # ✅ 8 bounded contexts with relationships
+│       ├── bounded_contexts_analysis.md       # ✅ Context dependency analysis
+│       ├── bounded_context.png                # ✅ Visual representation
+│       ├── domain_models.md                   # ✅ 12 aggregates, 40+ domain events
+│       ├── microservice.mmd                   # ✅ Mermaid flowchart diagram
+│       ├── microservices.jpg                  # ✅ High-resolution architecture diagram
+│       ├── microservices_architecture.md      # ✅ Detailed service descriptions
+│       ├── questions_for_technical_manager.md # ✅ Requirements gathering template
+│       └── ubiquitous_language.md             # ✅ Business terminology glossary
+│
 ├── 04_Evidence/
-│   └── Screenshots.docx           # ✅ Application screenshots
-├── REFACTORING_ASSESSMENT.md      # ✅ Anti-pattern analysis + patterns
-└── README.md
+│   └── Screenshots.docx                       # ✅ Application screenshots (13.7 MB)
+│
+├── 05_Final_Report/
+│   ├── Hesham_Mihai_HaVu_Software Design_EasyParkPlus_Report_V1.0.docx
+│   └── Hesham_Mihai_HaVu_Software Design_EasyParkPlus_Report_V1.0.pdf
+│
+├── .gitignore
+├── opencode.json
+├── README.md                                   # ✅ This comprehensive project documentation
+└── REFACTORING_ASSESSMENT.md                  # ✅ Anti-pattern analysis + patterns (in root for easy access)
 ```
+
+### Directory Descriptions
+
+| Directory | Contents | Status |
+|-----------|----------|--------|
+| **01_Baseline_Code** | Original prototype code and anti-pattern assessment | ✅ Complete |
+| **02_Refactored_App** | Refactored code with Factory + Observer patterns | ✅ Complete |
+| **03_Documentation** | All DDD, UML, and architecture documentation | ✅ Complete |
+| **04_Evidence** | Screenshots demonstrating application functionality | ✅ Complete |
+| **05_Final_Report** | Comprehensive final project report (PDF + DOCX) | ✅ Complete |
